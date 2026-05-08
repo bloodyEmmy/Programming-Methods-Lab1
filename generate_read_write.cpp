@@ -48,5 +48,23 @@ void file_read(vector<Ship>& my_vector) {
         getline(file, temp.captain_name);
         my_vector.push_back(temp);
     }
+    
+    file.close();
+}
+
+void file_write(vector<Ship>& my_vector) {
+    ofstream file("output_data.txt");
+    if (file.is_open() == false) {
+        cout << "Не удалось открыть файл output_data.txt" << "\n";
+        return;
+    }
+    for (int i = 0; i < my_vector.size(); i++) {
+        file << my_vector[i].ship_name << "\n";
+        file << my_vector[i].year_build << "\n";
+        file << my_vector[i].country_build << "\n";
+        file << my_vector[i].ship_type << "\n";
+        file << my_vector[i].captain_name << "\n";
+    }
+
     file.close();
 }

@@ -12,5 +12,6 @@
 
 void file_generate();
 void file_read(std::vector<Ship>& my_vector);
+void file_write(std::vector<Ship>& my_vector);
 
 #endif
