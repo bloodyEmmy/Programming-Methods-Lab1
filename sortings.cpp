@@ -40,3 +40,42 @@ void sort_pyramid(vector<Ship>& my_vector) {
         go_down(my_vector, i, 0);
     }
 }
+
+void merging(vector<Ship>& my_vector, int start, int mid, int end) {
+    vector<Ship> left, right;
+    for (int i = start; i <= mid; i++) left.push_back(my_vector[i]);
+    for (int i = mid + 1; i <= end; i++) right.push_back(my_vector[i]);
+
+    int i_left = 0, i_right = 0;
+    int i_total = start;
+    while (i_left < left.size() && i_right < right.size()) {
+        if (left[i_left] <= right[i_right]) { // Твой оператор сравнения
+            my_vector[i_total] = left[i_left];
+            i_left++;
+        } else {
+            my_vector[i_total] = right[i_right];
+            i_right++;
+        }
+        i_total++;
+    }
+    while (i_left < left.size()) {
+        my_vector[i_total] = left[i_left];
+        i_left++; 
+        i_total++;
+    }
+    while (i_right < right.size()) {
+        my_vector[i_total] = right[i_right];
+        i_right++; 
+        i_total++;
+    }
+}
+
+void sort_merge(vector<Ship>& my_vector, int start, int end) {
+    if (start == end) {
+        return;
+    }
+    int mid = (start + end) / 2;
+    sort_merge(my_vector, start, mid);
+    sort_merge(my_vector, mid + 1, end);
+    merging(my_vector, start, mid, end);
+}

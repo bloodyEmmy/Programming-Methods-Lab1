@@ -22,7 +22,9 @@ int main() {
     // Для начала возьми маленькое число, например 1000, 
     // чтобы не ждать вечность, пока Insertion Sort переварит 100к
     cout << "3. Сортировка..." << endl;
-    sort_insert(fleet); 
+    // sort_insert(fleet);
+    // sort_pyramid(fleet);
+    //sort_merge(fleet, 0, fleet.size() - 1); 
 
     cout << "4. Запись в файл..." << endl;
     file_write(fleet);

@@ -9,5 +9,6 @@
 
 void sort_insert(std::vector<Ship>& my_vector);
 void sort_pyramid(std::vector<Ship>& my_vector);
+void sort_merge(std::vector<Ship>& my_vector, int start, int end);
 
 #endif
