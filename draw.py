@@ -20,6 +20,6 @@ plt.grid(True, linestyle='--', alpha=0.7)
 plt.legend()
 
 plt.tight_layout()
-plt.savefig('sorting_graph.png', dpi=300)
 plt.yscale('log')
+plt.savefig('sorting_graph.png', dpi=300)
 plt.show()

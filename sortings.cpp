@@ -49,7 +49,7 @@ void merging(vector<Ship>& my_vector, int start, int mid, int end) {
     int i_left = 0, i_right = 0;
     int i_total = start;
     while (i_left < left.size() && i_right < right.size()) {
-        if (left[i_left] <= right[i_right]) { // Твой оператор сравнения
+        if (left[i_left] <= right[i_right]) {
             my_vector[i_total] = left[i_left];
             i_left++;
         } else {
