@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.17.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Programming Methods Lab1: Исходный файл struct_operators.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="module">
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default';
+mermaid.initialize({ startOnLoad: true, theme: theme });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Programming Methods Lab1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.17.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu('',true);
+  init_search();
+});
+</script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1" style="position:absolute;right:8px;top:8px;height:36px;"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2" style="float:right">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('struct__operators_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">struct_operators.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="struct__operators_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef STRUCT_OPERATORS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define STRUCT_OPERATORS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="struct_ship.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_ship.html">Ship</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="struct_ship.html#adfb9b6935f238143e9844d80c4e81b70">   11</a></span>    std::string <a class="code hl_variable" href="struct_ship.html#adfb9b6935f238143e9844d80c4e81b70">ship_name</a>;     </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_ship.html#aeb32f0f532267ab99bd80b6b4b449497">   12</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_ship.html#aeb32f0f532267ab99bd80b6b4b449497">year_build</a>;            </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_ship.html#a7bb864644449a1583ee41db741e15a90">   13</a></span>    std::string <a class="code hl_variable" href="struct_ship.html#a7bb864644449a1583ee41db741e15a90">country_build</a>; </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_ship.html#a853de0ef6c753889e81821acd9f0b9b7">   14</a></span>    std::string <a class="code hl_variable" href="struct_ship.html#a853de0ef6c753889e81821acd9f0b9b7">ship_type</a>;     </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_ship.html#ab3379b99f142fa5e45018c709c0b2900">   15</a></span>    std::string <a class="code hl_variable" href="struct_ship.html#ab3379b99f142fa5e45018c709c0b2900">captain_name</a>;  </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">bool</span> <a class="code hl_function" href="struct__operators_8h.html#a167d0bcad8fbf3cdfdd7b9609661059a">operator&lt; </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; left, <span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; right);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">bool</span> <a class="code hl_function" href="struct__operators_8h.html#ad9a1cfc44fc995db2552f9df3009444e">operator&gt; </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; left, <span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; right);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">bool</span> <a class="code hl_function" href="struct__operators_8h.html#a8ef594dede491e08a24d55606c24bf5f">operator&lt;= </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; left, <span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; right);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">bool</span> <a class="code hl_function" href="struct__operators_8h.html#a8374620aec76bb8f8b4befd657ec9c6e">operator&gt;= </a>(<span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; left, <span class="keyword">const</span> <a class="code hl_struct" href="struct_ship.html">Ship</a>&amp; right);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astruct__operators_8h_html_a167d0bcad8fbf3cdfdd7b9609661059a"><div class="ttname"><a href="struct__operators_8h.html#a167d0bcad8fbf3cdfdd7b9609661059a">operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const Ship &amp;left, const Ship &amp;right)</div><div class="ttdoc">Перегрузка оператора &quot;Меньше&quot;. Сравнение идет по приоритету: Год постройки -&gt; Название корабля -&gt; Тип...</div><div class="ttdef"><b>Определения</b> struct_operators.cpp:5</div></div>
+<div class="ttc" id="astruct__operators_8h_html_a8374620aec76bb8f8b4befd657ec9c6e"><div class="ttname"><a href="struct__operators_8h.html#a8374620aec76bb8f8b4befd657ec9c6e">operator&gt;=</a></div><div class="ttdeci">bool operator&gt;=(const Ship &amp;left, const Ship &amp;right)</div><div class="ttdef"><b>Определения</b> struct_operators.cpp:19</div></div>
+<div class="ttc" id="astruct__operators_8h_html_a8ef594dede491e08a24d55606c24bf5f"><div class="ttname"><a href="struct__operators_8h.html#a8ef594dede491e08a24d55606c24bf5f">operator&lt;=</a></div><div class="ttdeci">bool operator&lt;=(const Ship &amp;left, const Ship &amp;right)</div><div class="ttdef"><b>Определения</b> struct_operators.cpp:15</div></div>
+<div class="ttc" id="astruct__operators_8h_html_ad9a1cfc44fc995db2552f9df3009444e"><div class="ttname"><a href="struct__operators_8h.html#ad9a1cfc44fc995db2552f9df3009444e">operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const Ship &amp;left, const Ship &amp;right)</div><div class="ttdef"><b>Определения</b> struct_operators.cpp:11</div></div>
+<div class="ttc" id="astruct_ship_html"><div class="ttname"><a href="struct_ship.html">Ship</a></div><div class="ttdoc">Структура, описывающая сущность &quot;Корабль&quot;. Хранит основные характеристики судна и данные о капитане.</div><div class="ttdef"><b>Определения</b> struct_operators.h:10</div></div>
+<div class="ttc" id="astruct_ship_html_a7bb864644449a1583ee41db741e15a90"><div class="ttname"><a href="struct_ship.html#a7bb864644449a1583ee41db741e15a90">Ship::country_build</a></div><div class="ttdeci">std::string country_build</div><div class="ttdef"><b>Определения</b> struct_operators.h:13</div></div>
+<div class="ttc" id="astruct_ship_html_a853de0ef6c753889e81821acd9f0b9b7"><div class="ttname"><a href="struct_ship.html#a853de0ef6c753889e81821acd9f0b9b7">Ship::ship_type</a></div><div class="ttdeci">std::string ship_type</div><div class="ttdef"><b>Определения</b> struct_operators.h:14</div></div>
+<div class="ttc" id="astruct_ship_html_ab3379b99f142fa5e45018c709c0b2900"><div class="ttname"><a href="struct_ship.html#ab3379b99f142fa5e45018c709c0b2900">Ship::captain_name</a></div><div class="ttdeci">std::string captain_name</div><div class="ttdef"><b>Определения</b> struct_operators.h:15</div></div>
+<div class="ttc" id="astruct_ship_html_adfb9b6935f238143e9844d80c4e81b70"><div class="ttname"><a href="struct_ship.html#adfb9b6935f238143e9844d80c4e81b70">Ship::ship_name</a></div><div class="ttdeci">std::string ship_name</div><div class="ttdef"><b>Определения</b> struct_operators.h:11</div></div>
+<div class="ttc" id="astruct_ship_html_aeb32f0f532267ab99bd80b6b4b449497"><div class="ttname"><a href="struct_ship.html#aeb32f0f532267ab99bd80b6b4b449497">Ship::year_build</a></div><div class="ttdeci">int year_build</div><div class="ttdef"><b>Определения</b> struct_operators.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct__operators_8h.html">struct_operators.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.17.0 </li>
+  </ul>
+</div>
+</body>
+</html>

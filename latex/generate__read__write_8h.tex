@@ -1,0 +1,70 @@
+\doxysection{Файл generate\+\_\+read\+\_\+write.\+h}
+\hypertarget{generate__read__write_8h}{}\label{generate__read__write_8h}\index{generate\_read\_write.h@{generate\_read\_write.h}}
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$fstream$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$ctime$>$}\newline
+{\ttfamily \+\#include $<$cstdlib$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include "{}struct\+\_\+operators.\+h"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{generate__read__write_8h_a500a785459aec041ded0f7f9dd937a57}{file\+\_\+generate}} ()
+\begin{DoxyCompactList}\small\item\em Генерация тестовых данных. Создает текстовый файл (input\+\_\+data.\+txt) и записывает в него 100 000 случайно сгенерированных записей о кораблях для последующей сортировки. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{generate__read__write_8h_a4081fd4ba626331993db6d1cc6cf9797}{file\+\_\+read}} (std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&my\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em Чтение исходных данных из файла. Открывает файл input\+\_\+data.\+txt, считывает характеристики кораблей и добавляет их в конец переданного вектора. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{generate__read__write_8h_a5f1f439e4fcd62fa574ab9b20e0f1e28}{file\+\_\+write}} (std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&my\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em Запись отсортированного массива в файл. Построчно выгружает все элементы вектора в итоговый файл (output\+\_\+data.\+txt). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{generate__read__write_8h_doc-func-members}
+\Hypertarget{generate__read__write_8h_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{generate__read__write_8h_a500a785459aec041ded0f7f9dd937a57}\index{generate\_read\_write.h@{generate\_read\_write.h}!file\_generate@{file\_generate}}
+\index{file\_generate@{file\_generate}!generate\_read\_write.h@{generate\_read\_write.h}}
+\doxysubsubsection{\texorpdfstring{file\_generate()}{file\_generate()}}
+{\footnotesize\ttfamily \label{generate__read__write_8h_a500a785459aec041ded0f7f9dd937a57} 
+void file\+\_\+generate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Генерация тестовых данных. Создает текстовый файл (input\+\_\+data.\+txt) и записывает в него 100 000 случайно сгенерированных записей о кораблях для последующей сортировки. 
+
+\Hypertarget{generate__read__write_8h_a4081fd4ba626331993db6d1cc6cf9797}\index{generate\_read\_write.h@{generate\_read\_write.h}!file\_read@{file\_read}}
+\index{file\_read@{file\_read}!generate\_read\_write.h@{generate\_read\_write.h}}
+\doxysubsubsection{\texorpdfstring{file\_read()}{file\_read()}}
+{\footnotesize\ttfamily \label{generate__read__write_8h_a4081fd4ba626331993db6d1cc6cf9797} 
+void file\+\_\+read (\begin{DoxyParamCaption}\item[{std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&}]{my\+\_\+vector}{}\end{DoxyParamCaption})}
+
+
+
+Чтение исходных данных из файла. Открывает файл input\+\_\+data.\+txt, считывает характеристики кораблей и добавляет их в конец переданного вектора. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Аргументы}
+{\em my\+\_\+vector} & Ссылка на вектор объектов \doxylink{struct_ship}{Ship}, который будет заполнен прочитанными данными. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\Hypertarget{generate__read__write_8h_a5f1f439e4fcd62fa574ab9b20e0f1e28}\index{generate\_read\_write.h@{generate\_read\_write.h}!file\_write@{file\_write}}
+\index{file\_write@{file\_write}!generate\_read\_write.h@{generate\_read\_write.h}}
+\doxysubsubsection{\texorpdfstring{file\_write()}{file\_write()}}
+{\footnotesize\ttfamily \label{generate__read__write_8h_a5f1f439e4fcd62fa574ab9b20e0f1e28} 
+void file\+\_\+write (\begin{DoxyParamCaption}\item[{std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&}]{my\+\_\+vector}{}\end{DoxyParamCaption})}
+
+
+
+Запись отсортированного массива в файл. Построчно выгружает все элементы вектора в итоговый файл (output\+\_\+data.\+txt). 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Аргументы}
+{\em my\+\_\+vector} & Ссылка на вектор объектов \doxylink{struct_ship}{Ship}, данные из которого необходимо сохранить. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}

@@ -1,0 +1,67 @@
+\doxysection{Файл struct\+\_\+operators.\+h}
+\hypertarget{struct__operators_8h}{}\label{struct__operators_8h}\index{struct\_operators.h@{struct\_operators.h}}
+{\ttfamily \+\#include $<$string$>$}\newline
+\doxysubsubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_ship}{Ship}}
+\begin{DoxyCompactList}\small\item\em Структура, описывающая сущность "{}Корабль"{}. Хранит основные характеристики судна и данные о капитане. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{struct__operators_8h_a167d0bcad8fbf3cdfdd7b9609661059a}{operator$<$}} (const \doxymbox{\hyperlink{struct_ship}{Ship}} \&left, const \doxymbox{\hyperlink{struct_ship}{Ship}} \&right)
+\begin{DoxyCompactList}\small\item\em Перегрузка оператора "{}Меньше"{}. Сравнение идет по приоритету:\+ Год постройки -\/\texorpdfstring{$>$}{>} Название корабля -\/\texorpdfstring{$>$}{>} Тип корабля. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{struct__operators_8h_ad9a1cfc44fc995db2552f9df3009444e}{operator$>$}} (const \doxymbox{\hyperlink{struct_ship}{Ship}} \&left, const \doxymbox{\hyperlink{struct_ship}{Ship}} \&right)
+\item 
+bool \doxymbox{\hyperlink{struct__operators_8h_a8ef594dede491e08a24d55606c24bf5f}{operator$<$=}} (const \doxymbox{\hyperlink{struct_ship}{Ship}} \&left, const \doxymbox{\hyperlink{struct_ship}{Ship}} \&right)
+\item 
+bool \doxymbox{\hyperlink{struct__operators_8h_a8374620aec76bb8f8b4befd657ec9c6e}{operator$>$=}} (const \doxymbox{\hyperlink{struct_ship}{Ship}} \&left, const \doxymbox{\hyperlink{struct_ship}{Ship}} \&right)
+\end{DoxyCompactItemize}
+
+
+\label{struct__operators_8h_doc-func-members}
+\Hypertarget{struct__operators_8h_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{struct__operators_8h_a167d0bcad8fbf3cdfdd7b9609661059a}\index{struct\_operators.h@{struct\_operators.h}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!struct\_operators.h@{struct\_operators.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{struct__operators_8h_a167d0bcad8fbf3cdfdd7b9609661059a} 
+bool operator$<$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{left}{, }\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{right}{}\end{DoxyParamCaption})}
+
+
+
+Перегрузка оператора "{}Меньше"{}. Сравнение идет по приоритету:\+ Год постройки -\/\texorpdfstring{$>$}{>} Название корабля -\/\texorpdfstring{$>$}{>} Тип корабля. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Аргументы}
+{\em left} & Левый операнд (корабль 1). \\
+\hline
+{\em right} & Правый операнд (корабль 2). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true Если левый корабль "{}меньше"{} правого. 
+
+false Во всех остальных случаях. 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\Hypertarget{struct__operators_8h_a8ef594dede491e08a24d55606c24bf5f}\index{struct\_operators.h@{struct\_operators.h}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!struct\_operators.h@{struct\_operators.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{struct__operators_8h_a8ef594dede491e08a24d55606c24bf5f} 
+bool operator$<$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{left}{, }\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{right}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct__operators_8h_ad9a1cfc44fc995db2552f9df3009444e}\index{struct\_operators.h@{struct\_operators.h}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!struct\_operators.h@{struct\_operators.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{struct__operators_8h_ad9a1cfc44fc995db2552f9df3009444e} 
+bool operator$>$ (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{left}{, }\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{right}{}\end{DoxyParamCaption})}
+
+\Hypertarget{struct__operators_8h_a8374620aec76bb8f8b4befd657ec9c6e}\index{struct\_operators.h@{struct\_operators.h}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!struct\_operators.h@{struct\_operators.h}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{struct__operators_8h_a8374620aec76bb8f8b4befd657ec9c6e} 
+bool operator$>$= (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{left}{, }\item[{const \doxymbox{\hyperlink{struct_ship}{Ship}} \&}]{right}{}\end{DoxyParamCaption})}
+

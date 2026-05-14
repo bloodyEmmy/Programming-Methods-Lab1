@@ -1,0 +1,82 @@
+\doxysection{Файл sortings.\+h}
+\hypertarget{sortings_8h}{}\label{sortings_8h}\index{sortings.h@{sortings.h}}
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+{\ttfamily \+\#include $<$utility$>$}\newline
+{\ttfamily \+\#include "{}struct\+\_\+operators.\+h"{}}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{sortings_8h_ae8ab5762cb291c15ea52e32a58ff0703}{sort\+\_\+insert}} (std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&my\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em Сортировка простыми вставками (Insertion Sort). \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{sortings_8h_a63271e447b35f54e1ad525ba216c99a1}{sort\+\_\+pyramid}} (std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&my\+\_\+vector)
+\begin{DoxyCompactList}\small\item\em Пирамидальная сортировка (Heapsort). \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{sortings_8h_ab29b4a54368feca39559c1c62b4882e3}{sort\+\_\+merge}} (std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&my\+\_\+vector, int start, int end)
+\begin{DoxyCompactList}\small\item\em Сортировка слиянием (Merge Sort). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{sortings_8h_doc-func-members}
+\Hypertarget{sortings_8h_doc-func-members}
+\doxysubsection{Функции}
+\Hypertarget{sortings_8h_ae8ab5762cb291c15ea52e32a58ff0703}\index{sortings.h@{sortings.h}!sort\_insert@{sort\_insert}}
+\index{sort\_insert@{sort\_insert}!sortings.h@{sortings.h}}
+\doxysubsubsection{\texorpdfstring{sort\_insert()}{sort\_insert()}}
+{\footnotesize\ttfamily \label{sortings_8h_ae8ab5762cb291c15ea52e32a58ff0703} 
+void sort\+\_\+insert (\begin{DoxyParamCaption}\item[{std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&}]{my\+\_\+vector}{}\end{DoxyParamCaption})}
+
+
+
+Сортировка простыми вставками (Insertion Sort). 
+
+
+\begin{DoxyItemize}
+\item Алгоритм проходит по массиву и вставляет каждый элемент на его правильное место в уже отсортированной левой части. Медленный алгоритм для больших массивов.
+\item 
+\begin{DoxyParams}{Аргументы}
+{\em my\+\_\+vector} & Ссылка на вектор объектов \doxylink{struct_ship}{Ship} для сортировки. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\Hypertarget{sortings_8h_ab29b4a54368feca39559c1c62b4882e3}\index{sortings.h@{sortings.h}!sort\_merge@{sort\_merge}}
+\index{sort\_merge@{sort\_merge}!sortings.h@{sortings.h}}
+\doxysubsubsection{\texorpdfstring{sort\_merge()}{sort\_merge()}}
+{\footnotesize\ttfamily \label{sortings_8h_ab29b4a54368feca39559c1c62b4882e3} 
+void sort\+\_\+merge (\begin{DoxyParamCaption}\item[{std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&}]{my\+\_\+vector}{, }\item[{int}]{start}{, }\item[{int}]{end}{}\end{DoxyParamCaption})}
+
+
+
+Сортировка слиянием (Merge Sort). 
+
+
+\begin{DoxyItemize}
+\item Рекурсивно делит массив пополам, пока не останутся одиночные элементы, а затем сливает их в правильном порядке.
+\item 
+\begin{DoxyParams}{Аргументы}
+{\em my\+\_\+vector} & Ссылка на вектор объектов \doxylink{struct_ship}{Ship}. \\
+\hline
+{\em start} & Индекс начала сортируемого подмассива. \\
+\hline
+{\em end} & Индекс конца сортируемого подмассива. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\Hypertarget{sortings_8h_a63271e447b35f54e1ad525ba216c99a1}\index{sortings.h@{sortings.h}!sort\_pyramid@{sort\_pyramid}}
+\index{sort\_pyramid@{sort\_pyramid}!sortings.h@{sortings.h}}
+\doxysubsubsection{\texorpdfstring{sort\_pyramid()}{sort\_pyramid()}}
+{\footnotesize\ttfamily \label{sortings_8h_a63271e447b35f54e1ad525ba216c99a1} 
+void sort\+\_\+pyramid (\begin{DoxyParamCaption}\item[{std::\+vector$<$ \doxymbox{\hyperlink{struct_ship}{Ship}} $>$ \&}]{my\+\_\+vector}{}\end{DoxyParamCaption})}
+
+
+
+Пирамидальная сортировка (Heapsort). 
+
+
+\begin{DoxyItemize}
+\item Строит сортирующее дерево (max-\/heap) из элементов массива, а затем последовательно извлекает максимальный элемент, помещая его в конец.
+\item 
+\begin{DoxyParams}{Аргументы}
+{\em my\+\_\+vector} & Ссылка на вектор объектов \doxylink{struct_ship}{Ship}. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}

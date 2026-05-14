@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['operator_3c_0',['operator&lt;',['../struct__operators_8cpp.html#a167d0bcad8fbf3cdfdd7b9609661059a',1,'operator&lt;(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp'],['../struct__operators_8h.html#a167d0bcad8fbf3cdfdd7b9609661059a',1,'operator&lt;(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp']]],
+  ['operator_3c_3d_1',['operator&lt;=',['../struct__operators_8cpp.html#a8ef594dede491e08a24d55606c24bf5f',1,'operator&lt;=(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp'],['../struct__operators_8h.html#a8ef594dede491e08a24d55606c24bf5f',1,'operator&lt;=(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp']]],
+  ['operator_3e_2',['operator&gt;',['../struct__operators_8cpp.html#ad9a1cfc44fc995db2552f9df3009444e',1,'operator&gt;(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp'],['../struct__operators_8h.html#ad9a1cfc44fc995db2552f9df3009444e',1,'operator&gt;(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp']]],
+  ['operator_3e_3d_3',['operator&gt;=',['../struct__operators_8cpp.html#a8374620aec76bb8f8b4befd657ec9c6e',1,'operator&gt;=(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp'],['../struct__operators_8h.html#a8374620aec76bb8f8b4befd657ec9c6e',1,'operator&gt;=(const Ship &amp;left, const Ship &amp;right):&#160;struct_operators.cpp']]]
+];
